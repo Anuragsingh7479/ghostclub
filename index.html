@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostDeveloper - Expert Web Development Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-horizontal">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="anurag logo.jpg" height="300px" alt="GhostDeveloper Logo" class="anurag logo.jpg">
+                    <h2 class="dev-name">Anurag Pratap Singh</h2>
+                </div>
+                <h1>GhostDeveloper</h1>
+                <p class="lead">Invisible Force Behind Powerful Websites</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built with the latest technologies for optimal performance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Cross-platform mobile applications that work seamlessly on all devices.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your visibility and drive more organic traffic to your website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="portfolio-grid">
+                <!-- Portfolio items would go here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-fade">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project items will be dynamically added via JS -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="images/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with payment integration</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Mobile application for tracking workouts and nutrition</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Add more project cards as needed -->
+            </div>
+            
+            <button id="add-project-btn" class="admin-btn">+ Add New Project</button>
+        </div>
+    </section>
+
+    <section id="certifications" class="section-fade">
+        <div class="container">
+            <h2 class="section-title">My Certifications</h2>
+            
+            <div class="cert-gallery">
+                <div class="cert-item">
+                    <img src="images/cert1.jpg" alt="Certification 1">
+                    <div class="cert-overlay">
+                        <h3>Web Development Bootcamp</h3>
+                        <p>Issued by: Udemy</p>
+                        <p>Date: January 2023</p>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <img src="images/cert2.jpg" alt="Certification 2">
+                    <div class="cert-overlay">
+                        <h3>React Developer Certificate</h3>
+                        <p>Issued by: Meta</p>
+                        <p>Date: March 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Add more certification items as needed -->
+            </div>
+            
+            <button id="add-cert-btn" class="admin-btn">+ Add New Certification</button>
+        </div>
+    </section>
+
+    <section id="about" class="section-fade">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Anurag Pratap Singh">
+                </div>
+                
+                <div class="about-content">
+                    <div id="about-text" class="editable-content">
+                        <p>Hi, I'm Anurag Pratap Singh, a passionate full-stack developer with expertise in creating modern web applications and mobile solutions. With over 5 years of experience in the field, I've worked on a variety of projects ranging from small business websites to complex enterprise applications.</p>
+                        
+                        <p>My technical skills include:</p>
+                        <ul>
+                            <li>Frontend: HTML, CSS, JavaScript, React, Vue.js</li>
+                            <li>Backend: Node.js, Python, PHP</li>
+                            <li>Mobile: React Native, Flutter</li>
+                            <li>Database: MongoDB, MySQL, PostgreSQL</li>
+                            <li>DevOps: Docker, AWS, Git</li>
+                        </ul>
+                    </div>
+                    
+                    <button id="edit-about-btn" class="admin-btn">Edit About Me</button>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <h3>My Journey</h3>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2023</h4>
+                            <p>Led development of an AI-powered e-commerce platform</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2022</h4>
+                            <p>Completed Advanced Full-Stack Developer certification</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2021</h4>
+                            <p>Started freelancing as GhostDeveloper</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more timeline items as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 6202150367</p>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <p>as3331733@gmail.com</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GhostDeveloper. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="gallery-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-login-modal" class="modal">
+        <div class="login-container">
+            <span class="close-modal">&times;</span>
+            <h2>Admin Login</h2>
+            <div class="login-form">
+                <input type="password" id="admin-password" placeholder="Enter admin password">
+                <button id="login-btn">Login</button>
+                <p id="login-error" class="error-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small Admin Login Button -->
+    <div id="admin-trigger">
+        <button id="admin-login-trigger"><i class="fas fa-lock"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
